@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Calculator Javascript</title>
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <h1 class="text-center">Basic Rock Paper Scissors game with JavaScript</h1>
+    <h2 class="text-center">Win five rounds to be the victor</h2>
+    <h3 class="text-center">
+        Player <span id="p-score">0</span> vs. <span id="c-score">0</span> Computer
+    </h3>
+    <h4 class="text-center">Round <span id="round"></span></h4>
+    <div class="d-flex justify-content-evenly">
+        <div class="text-center">
+            <h4 class="mb-3">Player</h4>
+            <div id="computer"></div>
+        </div>
+        <div class="text-center">
+            <h4 class="mb-3">Computer</h4>
+            <div id="player"></div>
+        </div>
+    </div>
+    <h3 id="win" class="hidden text-center"></h3>
+    <div id="play" class="text-center mt-5 hidden">
+        <h4>Select:</h4>
+        <img id="paper" class="play" src="assets/img/paper.png">
+        <img id="rock" class="play" src="assets/img/rock.png">
+        <img id="scissors" class="play" src="assets/img/scissors.png">
+    </div>
+    <div class="text-center mt-5">
+        <button id="start" class="btn btn-success mt-5" onclick="startGame(this)">Start</button>
+    </div>
+
+    <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
